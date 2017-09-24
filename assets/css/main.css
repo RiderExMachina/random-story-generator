@@ -1,0 +1,35 @@
+html{
+        background: grey;
+        color: #232323;
+    }    
+    #header{
+        background: #821;
+        font: Montserrat;
+        font-weight: bold;
+        font-size: 1.75em;
+        margin:0;
+        display: block;
+        width: 100%;
+        padding: 20px;
+    }
+    #main-content{
+        padding: 15px;
+        font-size: 1.5em;
+        
+    }
+    #generator{
+        background: #aaa;
+        border: solid black 1px;
+        margin: auto;
+        padding: 20px;
+        margin-top: 20%;
+        max-width: 750px;
+    }
+    .new-idea-btn{
+        margin-left: 70%;
+        font-size: 1.17em;
+    }
+    footer{
+        margin-left: 50%;
+        margin-top: 50%;
+    }

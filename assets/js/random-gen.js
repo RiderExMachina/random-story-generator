@@ -1,14 +1,3 @@
-<html>
-<head>
-        <meta charset="utf-8">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-        <title>Story Randomizer</title>
-        <meta name="description" content="Whoo.">
-        <link rel="stylesheet" href="assets/css/main.css">
-
-</head>
-<script>
-
 var genres = ["Comedy", "Drama", "Horror", "Romance", "Satire", "Tragedy", "Tragicomedy", "Fantasy", "Realistic Fiction"];
 var themes = ["Willpower", "Beauty of simplicity", "Patriotism – positive side or complications", "Reunion", "Hope", "Pride and downfall", "Celebration", "Religion", "Facing reality", "Purpose", "Man vs man", "Knowledge versus ignorance", "Feminism", "Death – inevitable or tragedy", "Segregation", "Liberty", "Fate", "Winning and losing", "Comfort after death", "Identity", "Simplicity", "Circle of life", "Childhood", "Xenophobia", "Power of tradition", "Emptiness of attaining false dream", "Quests", "Losing hope", "Hate", "Wisdom", "Social Construct", "Everlasting love", "Justice", "Prayer", "Universe", "Grief", "Character – destruction, building up", "Human Nature", "Identity", "Art", "Bravery", "Empowerment", "Faith versus doubt", "Beliefs", "Inner Peace", "Progress – real or illusion", "Earth", "Nationalism – complications", "Despair", "Sanity", "Hero", "Fate and free will", "Morality", "Self – inner and outer", "America", "Injustice", "Courage", "Role of men", "War", "Heartbreak of betrayal", "Valor", "Joy", "Everlasting love", "Power of words", "Fulfillment", "Power and corruption", "Encouraging", "Quest for power", "Imagination", "Destiny", "Innocence", "Freedom", "Creation", "Soul", "Redemption", "Marriage", "Names – power and significance", "Dying", "Heroism – real and perceived", "Time", "Peace", "Beauty", "Law", "Time", "Humor", "Fear", "Effects from the past", "Facing darkness", "Man vs self", "Heritage", "Gay, Lesbian, Bisexual, and Transgender rights", "Work", "Self-preservation", "Family", "Tolerance", "Change of power – necessity", "Peace", "Power and corruption", "Betrayal", "Isolationism – hazards", "Crime", "Lost love", "Change", "Knowledge", "Life", "Communication – verbal and nonverbal", "Aging", "Reunion", "Simplicity", "Deception", "Power of silence", "Greed as downfall", "Mercy", "Desire to escape", "Losing hope", "Displacement", "Reality", "Sadness", "Chaos and order", "Opportunity", "Patience", "Patriotism", "Technology in society – good or bad", "Logic", "Fate", "Waste", "Fading beauty", "Neglect", "Revolution", "Democracy", "Love and sacrifice", "Solitude", "Desire to escape", "Freedom", "Happiness", "Roses", "Nature as beauty", "Companionship as salvation", "Life – purpose of", "Vanity as downfall", "Music", "Rebirth", "Faith", "Emotions", "Arrogance", "Youth", "Knowledge", "Autonomy", "Loss of innocence", "Fear of failure", "Jealousy", "Beauty", "Economics", "Man vs nature", "Dreams", "Capitalism – effect on the individual", "Sympathy", "Opportunity", "Violence", "War", "Humility", "Man against nature", "God", "Hate", "Depression", "Mountains", "Travel", "Progress", "Friendship", "Role of Religion – virtue or hypocrisy", "Government", "Loss of innocence", "Disillusionment", "Race", "Bible", "Adversity", "Self-discipline", "Birds", "Oneness", "Loneliness as destructive force", "Isolation", "Abuse of power", "Vulnerability of the meek", "Courage", "Oppression of women", "Good versus bad", "Kindness", "Motherhood", "Darkness and lightness", "Female roles", "New Year", "Funerals", "Pride", "Heroism", "Trees", "Chance", "Self-awareness", "Loyalty", "Evils of racism", "Future", "Unselfishness", "Manipulation", "Nationalism", "Inner peace", "Optimism", "Chaos and order", "Unconditional love", "Nature", "Death", "Suicide", "Optimism", "Memories", "Growing up – pain or pleasure", "Revenge", "Medicine", "Conspiracy", "Evils by humanity", "Identity crisis", "Individual versus society", "Maturity", "Impossibility", "Empowerment", "Family – blessing or curse", "Love", "Dying", "Dangers of ignorance", "War – glory, necessity, pain, tragedy", "Death", "Innocence", "Stars", "Ideology", "Temptation and destruction", "Youth and beauty", "Working class struggles", "Necessity of work", "Forgiveness", "Children", "Gratitude", "Totalitarianism", "Common sense", "God", "Isolation", "Ignorance", "Lost love", "Facing reality", "Perfection", "Inspiration", "Failure", "Fear", "Man vs machine", "Illusion of power", "Heaven", "Conservation", "Disillusionment and dreams", "Circle of life", "Will to survive", "Trust", "Destruction of beauty", "Perseverance", "Mourning", "Prejudice", "Heartbreak", "Role of women", "Survival", "Jealousy", "Darkness and light", "Suffering", "Resistance", "Social mobility", "Overcoming – fear, weakness, vice", "Normality", "Pain", "Secrecy", "Wisdom of experience", "Temporary nature of physical beauty", "Fame", "Overcoming", "Optimism – power or folly", "Necessity", "Soul", "Quest for discovery", "Society", "Change versus tradition", "Good vs Evil", "Individuality", "Self-reliance", "Leadership", "Coming of age", "Sin", "Growing Up", "Convention and rebellion", "Love and sacrifice", "Hazards of passing judgment", "Coming of age", "Hope", "Angels", "Regret", "Life", "Materialism as downfall", "Peer pressure", "Wealth", "Vulnerability of the strong", "Change", "Power of wealth", "Lost honor", "Greed", "Revenge", "Nature", "Hierarchy in nature", "Not Giving Up", "Friendship", "Dedication", "Mankind", "Self-awareness", "Regret", "Immortality", "Passion", "Technology", "Inner versus outer strength", "Overcoming", "Happiness", "Virtue", "Illusion of power", "Temptation", "Trust", "Vices", "Flowers", "Truth", "Justice", "Beating the odds", "Patience"];
 var structure = ["Chris Vogler", "The Augustine Bible", "Scientific method", "Dan Harmon", "Alfred Hitchcock", "Billy Whilder", "Blake Snyder", "Syd Field", "Thomas Boston", "Steve Duncan", "Nigel Watts", "George Lucas", "Paul Gulino"];
@@ -32,26 +21,3 @@ document.getElementById("generator").innerHTML =
     "Genre: <b>" + genre + "</b><br />" +
     "<button class=\"new-idea-btn\" onclick=\"javascript:generate();\">Get New Idea</button>";
 }
-</script>
-<body>
-        <span id="header">
-        Story Randomizer
-        </span>
-        <div id="main-content">
-		  <p id="generator">
-                <!-- Setting:<br /> -->
-                Character:<br />
-                Motivation:<br />
-                Theme:<br />
-                Story Structure:<br />
-                Genre:<br />		
-		<button class="new-idea-btn" onclick="javascript:generate();">Get New Idea</button>
-            </p>
-        </div>
-</body>
-
-<footer>
-      <span style="font-size:10px;text-align:center">Created by David Seward (c) 2017</span>
-    </footer> 
-</html>
-
